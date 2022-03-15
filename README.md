@@ -2,14 +2,12 @@
 
 Objetivo
 
-Análise Estatística para PESSOA (LOCAL, aaaa)
+Análise Estatística para Marcelo Monteiro (INTO, 2022)
 
 ## Análises realizadas
 
 1. Análise descritiva
 1. Análise inferencial
-1. Análise de poder
-1. Imputação de dados faltantes
 1. Modelagem estatística
 
 ## Documentos
