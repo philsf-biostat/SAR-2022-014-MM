@@ -26,7 +26,7 @@ lst_theme <- list(`pkgwide-str:theme_name` = "FF gtsummary theme",
 
 set_gtsummary_theme(lst_theme)
 theme_gtsummary_compact()
-# theme_gtsummary_language(language = "pt") # traduzir
+theme_gtsummary_language(language = "pt") # traduzir
 
 # exploratory -------------------------------------------------------------
 
@@ -43,7 +43,7 @@ theme_gtsummary_compact()
 
 tab_desc <- analytical %>%
   tbl_summary(
-    include = c(group, outcome),
+    include = -id,
     # by = group,
   ) %>%
   # modify_caption(caption = "**Tabela 1** Características demográficas") %>%

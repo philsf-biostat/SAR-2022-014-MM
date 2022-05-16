@@ -1,8 +1,8 @@
 ---
 title: "Plano Analítico para [title]"
 subtitle: 'DOCUMENTO: SAP-2022-014-MM-v01'
-author: '**De:** Felipe Figueiredo **Para:** ___'
-date: "`r Sys.Date()`"
+author: '**De:** Felipe Figueiredo **Para:** Marcelo Monteiro'
+date: "2022-05-09"
 output:
   html_document:
     fig_caption: yes
@@ -50,6 +50,10 @@ colnames(history) <- c("Versão", "Alterações")
 kable(history)
 ```
 
+```{r cleaning, include=FALSE}
+source("scripts/input.R", encoding = 'UTF-8')
+```
+
 ---
 
 # Lista de abreviaturas
@@ -75,10 +79,6 @@ kable(history)
 
 # Dados
 
-```{r cleaning, include=FALSE}
-source("scripts/input.R", encoding = 'UTF-8')
-```
-
 ## Dados brutos
 
 A base de dados original possuía
@@ -101,7 +101,7 @@ A Tabela 1 mostra a estrutura dos dados analíticos.
 
 ```{r analytical data}
 analytical_mockup %>%
-  pander(caption = "**Tabela 1** Estrutura da tabela de dados analíticos após seleção e limpeza das variáveis.")
+  pander(caption = "**Tabela 1** Estrutura da tabela de dados analíticos após seleção e limpeza das variáveis.", split.table = Inf)
 ```
 
 # Variáveis do estudo
