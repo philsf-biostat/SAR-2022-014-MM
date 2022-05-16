@@ -5,7 +5,7 @@ library(tidyverse)
 library(readxl)
 # library(haven)
 # library(foreign)
-# library(lubridate)
+library(lubridate)
 # library(naniar)
 library(labelled)
 
@@ -25,7 +25,9 @@ data.raw <- data.raw %>%
   rename(
     id = nome,
   ) %>%
-  mutate() %>%
+  mutate(
+    idade = floor((nasc %--% data_cir)/dyears(1)),
+  ) %>%
   filter()
 
 # data wrangling ----------------------------------------------------------
