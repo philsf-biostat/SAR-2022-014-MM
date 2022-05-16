@@ -135,6 +135,8 @@ tab_inf %>%
 
 # Observações e limitações
 
+N/A
+
 # Conclusões
 
 # Referências
