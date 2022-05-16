@@ -13,4 +13,6 @@ units <- "cm"
 
 # save plots --------------------------------------------------------------
 
-ggsave(filename = "figures/outcome.png", plot = gg.outcome, height = height, width = width, units = units)
+ggsave(filename = "figures/outcome.png", plot = gg.outcome, height = 16, width = 16, units = units)
+ggsave(filename = "figures/perda.png", plot = gg_perda, height = height, width = 16, units = units)
+ggsave(filename = "figures/distr_age.png", plot = gg_age, height = height, width = width, units = units)

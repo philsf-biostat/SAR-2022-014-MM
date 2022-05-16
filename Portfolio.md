@@ -13,7 +13,7 @@ tags:
   - prognostic-models
 ---
 
-Avaliar a perda sanguíea e a redução dos níveis de hemoglobina em pacientes submetidos à artroplastia total do quadril bilateral simultânea, assim como as necessidades transfusionais nesses pacientes.
+Avaliar a perda sanguínea, de componentes hematológicos e diferença em resultados funcionais em pacientes submetidos a artroplastia total do quadril bilateral simultânea, assim como as necessidades transfusionais nesses pacientes em três momentos pós-cirúrgicos.
 
 Análise Estatística para Marcelo Monteiro (INTO, 2022)
 
@@ -24,6 +24,13 @@ Análise Estatística para Marcelo Monteiro (INTO, 2022)
 <!-- 1. Modelagem estatística -->
 
 ## Documentos
+
+<!-- O cliente solicitou que esta análise seja mantida confidencial até uma futura data, determinada pelo próprio cliente. -->
+<!-- Todos os documentos gerados nessa consultoria portanto não foram publicados online e apenas o título e o ano da análise foram incluídas no portfólio do consultor. -->
+<!-- Após a data acordada, os documentos serão disponibilizados. -->
+
+<!-- O cliente solicitou que esta análise seja mantida confidencial. -->
+<!-- Todos os documentos gerados nessa consultoria portanto não foram publicados online e apenas o título e o ano da análise foram incluídas no portfólio do consultor. -->
 
 ### Plano Analítico (SAP)
 

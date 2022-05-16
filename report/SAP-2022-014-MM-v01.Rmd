@@ -58,26 +58,26 @@ source("scripts/input.R", encoding = 'UTF-8')
 
 # Lista de abreviaturas
 
-- d: tamanho de efeito D de Cohen
-- CV: coeficiente de variação
+- CHA: Concentrado de hemácias
 - DP: desvio padrão
-- HR: razão de risco (*hazards ratio*)
+- EVA: Escala visual analógica
+- HHS: Harris hip score
 - IC: intervalo de confiança
-- IIQ: intervalo interquartílico
 - IMC: índice de massa corpórea
-- IRR: razão de taxas de incidência (*incidence rates ratio*)
-- OR: razão de chances (*odds ratio*)
-- RR: razão de riscos (*risks ratio*)
 
 # Contexto
 
 ## Objetivos
 
-Avaliar a perda sanguíea e a redução dos níveis de hemoglobina em pacientes submetidos à artroplastia total do quadril bilateral simultânea, assim como as necessidades transfusionais nesses pacientes.
+Avaliar a perda sanguínea, de componentes hematológicos e diferença em resultados funcionais em pacientes submetidos a artroplastia total do quadril bilateral simultânea, assim como as necessidades transfusionais nesses pacientes em três momentos pós-cirúrgicos.
 
 ## Hipóteses
 
+N/A
+
 ## Desenho do estudo
+
+Estudo longitudinal do tipo coorte prospectiva, de braço único.
 
 # Dados
 
@@ -88,11 +88,26 @@ A base de dados original possuía
 variáveis coletadas de
 `r Nobs_orig`
 observações.
+As variáveis incluíam diversas datas, altura, peso e resultados de exames de sangue.
+
+A idade foi calculada a partir da data de nascimento com precisão de calendário (considerando anos bissextos) relativa à data da cirurgia.
+O IMC foi calculado a partir a partir da altura e peso como $IMC = peso/{altura^2}$ kg/m².
+
+A volemia foi calculada seguindo as fórmulas:
+
+- $\text{volemia}_{homens} = \text{altura}^3 * 0.367 * \text{peso} * 0.32 + 0.604$
+- $\text{volemia}_{mulheres} = \text{altura}^3 * 0.356 * \text{peso} * 0.33 + 0.183$
+
+A perda de sangue e a perda de hemoglobina estimadas foram calculadas seguindo as fórmulas:
+
+- $\text{perda de hemoglobina}_t = \text{volemia} * \text{hemoglobina}_t / \text{hemoglobina}_{pré}$
+- $\text{perda de sangue}_t = \text{volemia} * (\text{hemoglobina}_{pré} - \text{perda de hemoglobina}_t) + \text{volume infundido}_t$
+
+Após os cálculos as variáveis que não seriam mais usadas foram descartadas.
 
 ## Tabela de dados analíticos
 
-Todas as variáveis da tabela de dados analíticos foram identificadas de acordo com as descrições das variáveis, e os valores foram identificados de acordo com o dicionário de dados providenciado.
-Estas identificações possibilitarão a criação de tabelas de resultados com qualidade de produção final.
+A tabela de dados bruta foi dividida em duas tabelas: uma para a descrição do perfil epidemiológico dos participantes do estudo e a tabela analítica para a análise das alterações nos componentes hematológicos e funcionais.
 
 Depois dos procedimentos de limpeza e seleção
 `r Nvar_final`
@@ -106,20 +121,35 @@ analytical_mockup %>%
   pander(caption = "**Tabela 1** Estrutura da tabela de dados analíticos após seleção e limpeza das variáveis.", split.table = Inf)
 ```
 
-# Variáveis do estudo
+Todas as variáveis da tabela de dados analíticos foram identificadas de acordo com as descrições das variáveis, e os valores foram identificados de acordo com o dicionário de dados providenciado.
+Estas identificações possibilitarão a criação de tabelas de resultados com qualidade de produção final.
 
-## Desfechos primário e secundários
+# Parâmetros do estudo
+
+## Critérios de inclusão e exclusão
+
+N/A
+
+## Exposições
+
+N/A
+
+## Desfechos
 
 **Especificação das medidas de desfecho** (Zarin, 2011):
 
-1. (Domínio)
-2. (Mensuração específica)
-3. (Métrica específica)
-4. (Método de agregação)
+1. (Domínio) Hemorragia / Anemia
+2. (Mensuração específica) Perda de componentes hematológicos e de sangue
+3. (Métrica específica) Mudança em relação à linha de base
+4. (Método de agregação) Média
 
 **Desfecho primário**
 
+Perda de componentes hematológicos e de sangue em 24 e 48 horas após a cirurgua, e mudança do HHS após seis semanas em relação ao momento pré-operatório.
+
 ## Covariáveis
+
+N/A
 
 # Métodos estatísticos
 
@@ -141,18 +171,20 @@ As distribuições das características dos participantes serão resumidas em ta
 ### Análise inferencial
 
 Todas as comparações entre os grupos serão avaliadas como análises univariadas.
-Variáveis contínuas serão comparadas entre os grupos com o
-teste t de grupos independentes com a correção de Welch.
-<!-- teste t pareado. -->
+Variáveis contínuas serão comparadas entre os períodos com o
+<!-- teste t de grupos independentes com a correção de Welch. -->
+teste t pareado.
 <!-- teste de Wilcoxon. -->
-Diferenças nas distribuições de variáveis categóricas serão avaliadas com o teste
-exato de Fisher.
+<!-- Diferenças nas distribuições de variáveis categóricas serão avaliadas com o teste -->
+<!-- exato de Fisher. -->
 <!-- qui-quadrado. -->
 <!-- McNemar. -->
 
 <!-- Todas as análises inferenciais serão realizadas com base nos modelos estatísticos (descritos na próxima seção). -->
 
 ### Modelagem estatística
+
+N/A
 
 ### Dados faltantes
 
@@ -177,6 +209,8 @@ Esta análise será realizada utilizando-se o software `R` versão `r getRversio
 
 # Observações e limitações
 
+N/A
+
 # Referências
 
 - **SAR-2022-014-MM-v01** -- Prognóstico de componentes hematológicos após ATQ bilateral simultânea em centro cirúrgico de referência
@@ -190,12 +224,15 @@ Este documento foi elaborado seguindo recomendações de estrutura para Planos d
 
 ## Disponibilidade
 
-Tanto este plano analítico como o relatório correspondente (**SAR-2022-014-MM-v01**) podem ser obtidos no seguinte endereço:
+Todos os documentos gerados nessa consultoria foram incluídos no portfólio do consultor.
 
-<https://philsf-biostat.github.io/SAR-2022-014-MM/>
+<!-- O cliente solicitou que esta análise seja mantida confidencial até uma futura data, determinada pelo próprio cliente. -->
+<!-- Todos os documentos gerados nessa consultoria portanto não foram publicados online e apenas o título e o ano da análise foram incluídas no portfólio do consultor. -->
+<!-- Após a data acordada, os documentos serão disponibilizados. -->
 
 <!-- O cliente solicitou que esta análise seja mantida confidencial. -->
-<!-- Tanto este plano analítico como o relatório correspondente (**SAR-2022-014-MM-v01**) portanto não foram publicados online e apenas o título e o ano da análise foram incluídas no portfólio do consultor. -->
-<!-- O portfólio pode ser visto em: -->
+<!-- Todos os documentos gerados nessa consultoria portanto não foram publicados online e apenas o título e o ano da análise foram incluídas no portfólio do consultor. -->
 
-<!-- <https://philsf-biostat.github.io/> -->
+O portfólio pode ser visto em:
+
+<https://philsf-biostat.github.io/SAR-2022-014-MM/>

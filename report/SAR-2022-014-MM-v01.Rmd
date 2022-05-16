@@ -62,15 +62,21 @@ source("scripts/results.R", encoding = 'UTF-8')
 
 ## Objetivos
 
-Avaliar a perda sanguíea e a redução dos níveis de hemoglobina em pacientes submetidos à artroplastia total do quadril bilateral simultânea, assim como as necessidades transfusionais nesses pacientes.
+Avaliar a perda sanguínea, de componentes hematológicos e diferença em resultados funcionais em pacientes submetidos a artroplastia total do quadril bilateral simultânea, assim como as necessidades transfusionais nesses pacientes em três momentos pós-cirúrgicos.
 
 ## Recepção e tratamento dos dados
 
 # Metodologia
 
-## Variáveis
+## Parâmetros do estudo
 
-### Desfechos primário e secundário
+### Desenho do estudo
+
+### Critérios de inclusão e exclusão
+
+### Exposições
+
+### Desfechos
 
 ### Covariáveis
 
@@ -91,16 +97,21 @@ tab_desc %>%
 
 ```{r fig1, fig.cap="**Figura 1** caption"}
 # ![Age](../figures/outcome.png)
-# knitr::include_graphics("../figures/outcome.png", error = FALSE)
+knitr::include_graphics("../figures/perda.png", error = FALSE)
 ```
 
 ## Análise inferencial
 
+```{r fig2, fig.cap="**Figura 2** caption"}
+# ![Age](../figures/outcome.png)
+knitr::include_graphics("../figures/outcome.png", error = FALSE)
+```
+
 ```{r tab_inf}
-# tab_inf %>%
-#     as_kable(
-#     caption = "**Tabela 2** caption"
-#   )
+tab_inf %>%
+    as_kable(
+    caption = "**Tabela 2** caption"
+  )
 ```
 
 # Observações e limitações
@@ -117,22 +128,23 @@ tab_desc %>%
 
 ```{r A1, fig.cap="**Figura A1** Distribuição da idade na população do estudo."}
 # ![Age](../figures/distr_age.png)
-# knitr::include_graphics("../figures/distr_age.png", error = FALSE)
+knitr::include_graphics("../figures/distr_age.png", error = FALSE)
 ```
 
 ## Disponibilidade
 
-Tanto este documento como o plano analítico correspondente (**SAP-2022-014-MM-v01**) podem ser obtidos no seguinte endereço:
+Todos os documentos gerados nessa consultoria foram incluídos no portfólio do consultor.
 
-<!-- Este documento pode ser obtido no seguinte endereço: -->
-
-<https://philsf-biostat.github.io/SAR-2022-014-MM/>
+<!-- O cliente solicitou que esta análise seja mantida confidencial até uma futura data, determinada pelo próprio cliente. -->
+<!-- Todos os documentos gerados nessa consultoria portanto não foram publicados online e apenas o título e o ano da análise foram incluídas no portfólio do consultor. -->
+<!-- Após a data acordada, os documentos serão disponibilizados. -->
 
 <!-- O cliente solicitou que esta análise seja mantida confidencial. -->
-<!-- Tanto este documento como o plano analítico correspondente (**SAP-2022-014-MM-v01**) portanto não foram publicados online e apenas o título e o ano da análise foram incluídas no portfólio do consultor. -->
-<!-- O portfólio pode ser visto em: -->
+<!-- Todos os documentos gerados nessa consultoria portanto não foram publicados online e apenas o título e o ano da análise foram incluídas no portfólio do consultor. -->
 
-<!-- <https://philsf-biostat.github.io/> -->
+O portfólio pode ser visto em:
+
+<https://philsf-biostat.github.io/SAR-2022-014-MM/>
 
 ## Dados utilizados
 
