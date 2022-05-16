@@ -23,7 +23,7 @@ Nobs_orig <- data.raw %>% nrow
 data.raw <- data.raw %>%
   # select() %>%
   rename(
-    id = nome,
+    id = prontuario,
     volemia = volemia_pre,
     perda_hb_24 = perda_hb_estimada_24,
   ) %>%
@@ -65,7 +65,7 @@ analytical <- data.raw %>%
     # group,
     # outcome,
     everything(),
-    -prontuario,
+    -nome,
     -starts_with("complicacoes"),
     -starts_with("deambulando"),
     -starts_with("ferida"),
