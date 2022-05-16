@@ -179,6 +179,8 @@ A perda de sangue média um dia após a cirurgia foi de 5.702, reduzida para 5.0
 knitr::include_graphics("../figures/perda.png", error = FALSE)
 ```
 
+CHA pré = 1, CHA 24 = 1 (não é o mesmo), CHA 48 = 0.
+
 ## Prognóstico de componentes hematológicos
 
 Os participantes do estudo tiveram redução dos parâmetros hematológicos ao longo do período de observação e aumento no escore funcional durante o período de observação (Figura 2, Tabela 2).
