@@ -100,7 +100,7 @@ tab_desc %>%
 knitr::include_graphics("../figures/perda.png", error = FALSE)
 ```
 
-## Análise inferencial
+## Prognóstico de componentes hematológicos
 
 ```{r fig2, fig.cap="**Figura 2** caption"}
 # ![Age](../figures/outcome.png)
