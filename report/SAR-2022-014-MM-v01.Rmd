@@ -1,5 +1,5 @@
 ---
-title: "[title]"
+title: "Prognóstico de componentes hematológicos após ATQ bilateral simultânea em centro cirúrgico de referência"
 subtitle: 'DOCUMENTO: SAR-2022-014-MM-v01'
 author: '**De:** Felipe Figueiredo **Para:** Marcelo Monteiro'
 date: "`r Sys.Date()`"
@@ -37,7 +37,7 @@ panderOptions('table.split.table', 160)
 
 \newpage
 
-**[title]**
+**Prognóstico de componentes hematológicos após ATQ bilateral simultânea em centro cirúrgico de referência**
 
 **Histórico do documento**
 
@@ -107,7 +107,7 @@ tab_desc %>%
 
 # Referências
 
-- **SAP-2022-014-MM-v01** -- Plano Analítico para [title]
+- **SAP-2022-014-MM-v01** -- Plano Analítico para Prognóstico de componentes hematológicos após ATQ bilateral simultânea em centro cirúrgico de referência
 
 # Apêndice
 
