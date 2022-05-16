@@ -141,3 +141,14 @@ analytical_mockup <- tibble( id = c( "1", "2", "3", "...", "N") ) %>%
   left_join(analytical %>% head(0), by = "id") %>%
   mutate_all(as.character) %>%
   replace(is.na(.), "")
+
+analytical_long <- analytical %>%
+  select(-starts_with(c("vol", "cha"))) %>%
+  pivot_longer(-id) %>%
+  separate(name, into = c("name", "time")) %>%
+  mutate(name = str_to_upper(name)) %>%
+  mutate(time = factor(time, levels = c("pre", "24", "48", "6s"), labels = c("Pré", "24h", "48h", "6s"))) %>%
+  mutate(name = factor(name, levels = c("HB", "HT", "EVA", "HHS", "PERDAHB", "PERDASANG"), labels = c("HB", "HT", "EVA", "HHS", "PERDA HB", "PERDA SANGUE"))) %>%
+  set_variable_labels(
+    time = "Momento",
+  )
