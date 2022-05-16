@@ -121,7 +121,7 @@ Os hematócritos teve derução de 9.4 no primeiro dia (p<0.001) e de 13 no segu
 A dor, mensurada pela EVA teve redução de 4.6 pontos (p<0.001) e no segundo dia redução de 6.4 pontos (p<0.001).
 Seis semanas após a cirurgia o HHS aumentou em média 53 pontos (p<0.001).
 
-```{r fig2, fig.cap="**Figura 2** Prognóstico das alterações nos componentes hematológicos e Harris Hip Score (HHS) dos participantes do estudo."}
+```{r fig2, fig.cap="**Figura 2** Prognóstico das alterações na hemoglobina (HB), hematócritos (HT) e Harris Hip Score (HHS) dos participantes do estudo."}
 # ![Age](../figures/outcome.png)
 knitr::include_graphics("../figures/outcome.png", error = FALSE)
 ```
