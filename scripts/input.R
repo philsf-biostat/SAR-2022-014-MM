@@ -104,6 +104,10 @@ epi <- data.raw %>%
     cha_pre,
     vol_tr,
     tempo_alta,
+    perdahb_24,
+    perdasang_24,
+    perdahb_48,
+    perdasang_48,
   )
 
 analytical <- data.raw %>%
