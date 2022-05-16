@@ -41,6 +41,7 @@ data.raw <- data.raw %>%
     perda_hb_48 = volemia * (hb_pre - hb_48) + vol_48,
     perda_sang_24 = volemia * perda_hb_24 / hb_pre,
     perda_sang_48 = volemia * perda_hb_48 / hb_pre,
+    across(where(is.POSIXct), as.Date),
   ) %>%
   filter()
 
