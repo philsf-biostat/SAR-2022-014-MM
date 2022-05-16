@@ -8,7 +8,7 @@ Análise Estatística para Marcelo Monteiro (INTO, 2022)
 
 1. Análise descritiva
 1. Análise inferencial
-1. Modelagem estatística
+<!-- 1. Modelagem estatística -->
 
 ## Documentos
 
