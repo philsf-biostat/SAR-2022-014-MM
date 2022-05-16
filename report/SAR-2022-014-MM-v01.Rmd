@@ -97,10 +97,10 @@ tab_desc %>%
 ## Análise inferencial
 
 ```{r tab_inf}
-# tab_inf %>%
-#     as_kable(
-#     caption = "**Tabela 2** caption"
-#   )
+tab_inf %>%
+    as_kable(
+    caption = "**Tabela 2** caption"
+  )
 ```
 
 # Observações e limitações
