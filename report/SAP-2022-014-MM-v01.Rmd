@@ -79,6 +79,8 @@ Avaliar a perda sanguíea e a redução dos níveis de hemoglobina em pacientes 
 
 ## Desenho do estudo
 
+Estudo longitudinal do tipo coorte prospectiva, de braço único.
+
 # Dados
 
 ## Dados brutos
