@@ -31,6 +31,14 @@ gg_perda <- analytical_long %>%
   ylab("") +
   theme_ff()
 
+gg_age <- epi %>%
+  ggplot(aes(idade, fill = sexo)) +
+  geom_density(alpha = .9) +
+  labs(fill = NULL) +
+  xlab(attr(epi$idade, "label")) +
+  ylab("") +
+  theme_ff()
+
 # cool facet trick from https://stackoverflow.com/questions/3695497 by JWilliman
 # gg +
 #   geom_histogram(bins = 5, aes(outcome, y = ..count../tapply(..count.., ..PANEL.., sum)[..PANEL..]), fill = ff.col) +
