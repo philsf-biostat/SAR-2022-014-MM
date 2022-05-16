@@ -151,18 +151,20 @@ As distribuições das características dos participantes serão resumidas em ta
 ### Análise inferencial
 
 Todas as comparações entre os grupos serão avaliadas como análises univariadas.
-Variáveis contínuas serão comparadas entre os grupos com o
-teste t de grupos independentes com a correção de Welch.
-<!-- teste t pareado. -->
+Variáveis contínuas serão comparadas entre os períodos com o
+<!-- teste t de grupos independentes com a correção de Welch. -->
+teste t pareado.
 <!-- teste de Wilcoxon. -->
-Diferenças nas distribuições de variáveis categóricas serão avaliadas com o teste
-exato de Fisher.
+<!-- Diferenças nas distribuições de variáveis categóricas serão avaliadas com o teste -->
+<!-- exato de Fisher. -->
 <!-- qui-quadrado. -->
 <!-- McNemar. -->
 
 <!-- Todas as análises inferenciais serão realizadas com base nos modelos estatísticos (descritos na próxima seção). -->
 
 ### Modelagem estatística
+
+N/A
 
 ### Dados faltantes
 
