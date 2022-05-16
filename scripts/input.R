@@ -28,6 +28,10 @@ data.raw <- data.raw %>%
   mutate(
     idade = floor((nasc %--% data_cir)/dyears(1)),
     imc = peso/(altura^2),
+    volemia_pre = case_when(
+      sexo == "M" ~ altura^3 * .356 * peso * .33 + .183,
+      sexo == "H" ~ altura^3 * .367 * peso * .32 + .604,
+    ),
   ) %>%
   filter()
 
