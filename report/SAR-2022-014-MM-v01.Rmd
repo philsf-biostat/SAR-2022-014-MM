@@ -88,21 +88,34 @@ Esta análise foi realizada utilizando-se o software `R` versão `r getRversion(
 
 ## População do estudo e acompanhamento
 
+Ao todo foram incluídos `r Nobs_final` participantes no estudo dos quais
+`r inline_text(tab_desc, variable = sexo, level = "H")`
+eram homens.
+Os participantes tinham idade média (DP)
+`r inline_text(tab_desc, variable = idade)` anos,
+com distribuição entre
+`r min(epi$idade)` e `r max(epi$idade)` anos.
+A tabela 1 exibe as características clínicas e epidemiológicas dos participantes.
+
 ```{r tab_desc}
 tab_desc %>%
     as_kable(
-    caption = "**Tabela 1** caption"
+    caption = "**Tabela 1** Características epidemiológicas e clínicas dos participantes do estudo."
   )
 ```
 
-```{r fig1, fig.cap="**Figura 1** caption"}
+Entre 24h e 48h após a cirurgia boa parte dos participantes apresentou redução tanto na perda de hemoglobina como na perda de sangue (Tabela 1, Figura 1).
+Após 24h os participantes apresentaram perda de hemoglobina em torno de 1.651 em média, e após 48h esta perda se reduziu para 1.454.
+A perda de sangue média um dia após a cirurgia foi de 5.702, reduzida para 5.055 no segundo dia.
+
+```{r fig1, fig.cap="**Figura 1** Prognóstico de perda de hemoglobina (HB) e perda de sangue dos participantes nos períodos de observação."}
 # ![Age](../figures/outcome.png)
 knitr::include_graphics("../figures/perda.png", error = FALSE)
 ```
 
-## Análise inferencial
+## Prognóstico de componentes hematológicos
 
-```{r fig2, fig.cap="**Figura 2** caption"}
+```{r fig2, fig.cap="**Figura 2** Prognóstico das alterações nos componentes hematológicos e Harris Hip Score (HHS) dos participantes do estudo."}
 # ![Age](../figures/outcome.png)
 knitr::include_graphics("../figures/outcome.png", error = FALSE)
 ```
@@ -110,7 +123,7 @@ knitr::include_graphics("../figures/outcome.png", error = FALSE)
 ```{r tab_inf}
 tab_inf %>%
     as_kable(
-    caption = "**Tabela 2** caption"
+    caption = "**Tabela 2** Prognóstico das alterações nos componentes hematológicos e Harris Hip Score (HHS) dos participantes do estudo."
   )
 ```
 
