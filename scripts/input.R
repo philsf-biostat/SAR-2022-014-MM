@@ -45,7 +45,6 @@ data.raw <- data.raw %>%
     perdahb_48 = volemia * (hb_pre - hb_48) + vol_48,
     perdasang_24 = volemia * perdahb_24 / hb_pre,
     perdasang_48 = volemia * perdahb_48 / hb_pre,
-    across(where(is.POSIXct), as.Date),
   ) %>%
   filter()
 
@@ -54,6 +53,7 @@ data.raw <- data.raw %>%
 data.raw <- data.raw %>%
   mutate(
     id = factor(id), # or as.character
+    across(where(is.POSIXct), as.Date),
   )
 
 # labels ------------------------------------------------------------------

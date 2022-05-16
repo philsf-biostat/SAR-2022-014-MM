@@ -88,11 +88,26 @@ A base de dados original possuía
 variáveis coletadas de
 `r Nobs_orig`
 observações.
+As variáveis incluíam diversas datas, altura, peso e resultados de exames de sangue.
+
+A idade foi calculada a partir da data de nascimento com precisão de calendário (considerando anos bissextos) relativa à data da cirurgia.
+O IMC foi calculado a partir a partir da altura e peso como $IMC = peso/{altura^2}$ kg/m².
+
+A volemia foi calculada seguindo as fórmulas:
+
+- $\text{volemia}_{homens} = \text{altura}^3 * 0.367 * \text{peso} * 0.32 + 0.604$
+- $\text{volemia}_{mulheres} = \text{altura}^3 * 0.356 * \text{peso} * 0.33 + 0.183$
+
+A perda de sangue e a perda de hemoglobina estimadas foram calculadas seguindo as fórmulas:
+
+- $\text{perda de hemoglobina}_t = \text{volemia} * \text{hemoglobina}_t / \text{hemoglobina}_{pré}$
+- $\text{perda de sangue}_t = \text{volemia} * (\text{hemoglobina}_{pré} - \text{perda de hemoglobina}_t) + \text{volume infundido}_t$
+
+Após os cálculos as variáveis que não seriam mais usadas foram descartadas.
 
 ## Tabela de dados analíticos
 
-Todas as variáveis da tabela de dados analíticos foram identificadas de acordo com as descrições das variáveis, e os valores foram identificados de acordo com o dicionário de dados providenciado.
-Estas identificações possibilitarão a criação de tabelas de resultados com qualidade de produção final.
+A tabela de dados bruta foi dividida em duas tabelas: uma para a descrição do perfil epidemiológico dos participantes do estudo e a tabela analítica para a análise das alterações nos componentes hematológicos e funcionais.
 
 Depois dos procedimentos de limpeza e seleção
 `r Nvar_final`
@@ -105,6 +120,9 @@ A Tabela 1 mostra a estrutura dos dados analíticos.
 analytical_mockup %>%
   pander(caption = "**Tabela 1** Estrutura da tabela de dados analíticos após seleção e limpeza das variáveis.", split.table = Inf)
 ```
+
+Todas as variáveis da tabela de dados analíticos foram identificadas de acordo com as descrições das variáveis, e os valores foram identificados de acordo com o dicionário de dados providenciado.
+Estas identificações possibilitarão a criação de tabelas de resultados com qualidade de produção final.
 
 # Parâmetros do estudo
 
