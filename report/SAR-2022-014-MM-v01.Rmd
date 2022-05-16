@@ -97,10 +97,15 @@ tab_desc %>%
 
 ```{r fig1, fig.cap="**Figura 1** caption"}
 # ![Age](../figures/outcome.png)
-# knitr::include_graphics("../figures/outcome.png", error = FALSE)
+knitr::include_graphics("../figures/perda.png", error = FALSE)
 ```
 
 ## Análise inferencial
+
+```{r fig2, fig.cap="**Figura 2** caption"}
+# ![Age](../figures/outcome.png)
+knitr::include_graphics("../figures/outcome.png", error = FALSE)
+```
 
 ```{r tab_inf}
 tab_inf %>%
@@ -123,7 +128,7 @@ tab_inf %>%
 
 ```{r A1, fig.cap="**Figura A1** Distribuição da idade na população do estudo."}
 # ![Age](../figures/distr_age.png)
-# knitr::include_graphics("../figures/distr_age.png", error = FALSE)
+knitr::include_graphics("../figures/distr_age.png", error = FALSE)
 ```
 
 ## Disponibilidade
