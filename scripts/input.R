@@ -27,6 +27,7 @@ data.raw <- data.raw %>%
   ) %>%
   mutate(
     idade = floor((nasc %--% data_cir)/dyears(1)),
+    imc = peso/(altura^2),
   ) %>%
   filter()
 
