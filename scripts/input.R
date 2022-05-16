@@ -65,6 +65,10 @@ analytical <- data.raw %>%
     # group,
     # outcome,
     everything(),
+    -prontuario,
+    -starts_with("complicacoes"),
+    -starts_with("deambulando"),
+    -starts_with("ferida"),
   )
 
 Nvar_final <- analytical %>% ncol
