@@ -25,6 +25,7 @@ data.raw <- data.raw %>%
   rename(
     id = nome,
     volemia = volemia_pre,
+    perda_hb_24 = perda_hb_estimada_24,
   ) %>%
   mutate(
     idade = floor((nasc %--% data_cir)/dyears(1)),
@@ -33,6 +34,8 @@ data.raw <- data.raw %>%
       sexo == "M" ~ altura^3 * .356 * peso * .33 + .183,
       sexo == "H" ~ altura^3 * .367 * peso * .32 + .604,
     ),
+    perda_hb_24 = volemia * (hb_pre - hb_24) + volume_infundido_24,
+    perda_hb_48 = volemia * (hb_pre - hb_48) + volume_infundido_48,
   ) %>%
   filter()
 
