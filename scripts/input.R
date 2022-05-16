@@ -69,6 +69,10 @@ analytical <- data.raw %>%
     -starts_with("complicacoes"),
     -starts_with("deambulando"),
     -starts_with("ferida"),
+    -nasc,
+    -starts_with("data"),
+    -peso,
+    -altura,
   )
 
 Nvar_final <- analytical %>% ncol
