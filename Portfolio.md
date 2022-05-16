@@ -25,6 +25,13 @@ Análise Estatística para Marcelo Monteiro (INTO, 2022)
 
 ## Documentos
 
+<!-- O cliente solicitou que esta análise seja mantida confidencial até uma futura data, determinada pelo próprio cliente. -->
+<!-- Todos os documentos gerados nessa consultoria portanto não foram publicados online e apenas o título e o ano da análise foram incluídas no portfólio do consultor. -->
+<!-- Após a data acordada, os documentos serão disponibilizados. -->
+
+<!-- O cliente solicitou que esta análise seja mantida confidencial. -->
+<!-- Todos os documentos gerados nessa consultoria portanto não foram publicados online e apenas o título e o ano da análise foram incluídas no portfólio do consultor. -->
+
 ### Plano Analítico (SAP)
 
 - [PDF][sap]

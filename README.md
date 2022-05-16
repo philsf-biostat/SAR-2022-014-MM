@@ -3,6 +3,7 @@
 Avaliar a perda sanguínea, de componentes hematológicos e diferença em resultados funcionais em pacientes submetidos a artroplastia total do quadril bilateral simultânea, assim como as necessidades transfusionais nesses pacientes em três momentos pós-cirúrgicos.
 
 Análise Estatística para Marcelo Monteiro (INTO, 2022)
+<!-- Relatório técnico para PESSOA (LOCAL, aaaa) -->
 
 ## Análises realizadas
 
