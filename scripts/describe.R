@@ -41,7 +41,7 @@ theme_gtsummary_language(language = "pt") # traduzir
 
 # tables ------------------------------------------------------------------
 
-tab_desc <- analytical %>%
+tab_desc <- epi %>%
   tbl_summary(
     include = -id,
     # by = group,

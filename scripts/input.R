@@ -58,6 +58,20 @@ data.raw <- data.raw %>%
 
 # analytical dataset ------------------------------------------------------
 
+epi <- data.raw %>%
+  # perfil epidemiológico
+  select(
+    id,
+    sexo,
+    idade,
+    imc,
+    volemia,
+    contains("pre"),
+    lado_1,
+    cha_cir,
+    volume_transfundido,
+  )
+
 analytical <- data.raw %>%
   # select analytic variables
   select(
@@ -73,6 +87,18 @@ analytical <- data.raw %>%
     -starts_with("data"),
     -peso,
     -altura,
+    # -contains(),
+    -sexo,
+    -idade,
+    -imc,
+    # -hb_pre,
+    # -ht_pre,
+    -volemia,
+    # -eva_pre,
+    # -hhs_pre,
+    -lado_1,
+    # -cha_cir,
+    -volume_transfundido,
   )
 
 Nvar_final <- analytical %>% ncol
