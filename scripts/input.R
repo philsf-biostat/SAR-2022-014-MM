@@ -29,6 +29,7 @@ data.raw <- data.raw %>%
     vol_tr = volume_transfundido,
     vol_24 = volume_infundido_24,
     vol_48 = volume_infundido_48,
+    cha_pre = cha_cir,
   ) %>%
   mutate(
     idade = floor((nasc %--% data_cir)/dyears(1)),
@@ -63,7 +64,7 @@ data.raw <- data.raw %>%
     hhs_pre = "HHS",
     hhs_6s = "HHS",
     lado_1 = "Primeiro lado operado",
-    cha_cir = "CHA",
+    cha_pre = "CHA",
     cha_24 = "CHA",
     cha_48 = "CHA",
     hb_pre = "Hemoglobina pré-op",
@@ -97,7 +98,7 @@ epi <- data.raw %>%
     volemia,
     contains("pre"),
     lado_1,
-    cha_cir,
+    cha_pre,
     vol_tr,
     tempo_alta,
   )
@@ -110,7 +111,7 @@ analytical <- data.raw %>%
     ht_pre,
     eva_pre,
     hhs_pre,
-    cha_cir,
+    cha_pre,
     hb_24,
     ht_24,
     cha_24,
