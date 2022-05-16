@@ -206,6 +206,9 @@ N/A
 
 # Conclusões
 
+A HB e a HT apresentaram redução significativa tanto em 24h quanto 48h após a ATQ.
+A EVA foi significativamente reduzida tanto em 24h quanto 48h após a ATQ e o HHS aumentou significativamente após seis semanas.
+
 # Referências
 
 - **SAP-2022-014-MM-v01** -- Plano Analítico para Prognóstico de componentes hematológicos após ATQ bilateral simultânea em centro cirúrgico de referência
