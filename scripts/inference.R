@@ -31,7 +31,8 @@ t_24 <- analytical %>%
     # test = list(all_continuous() ~ "paired.t.test", all_categorical() ~ "mcnemar.test"),
     test = all_continuous() ~ "paired.t.test",
     group = id,
-  )
+  ) %>%
+  modify_header(estimate ~ '**Diferença**')
 
 t_48 <- analytical %>%
   select(-ends_with("24"), -starts_with(c("perda", "vol", "cha"))) %>%
@@ -61,7 +62,8 @@ t_48 <- analytical %>%
     # test = list(all_continuous() ~ "paired.t.test", all_categorical() ~ "mcnemar.test"),
     test = all_continuous() ~ "paired.t.test",
     group = id,
-  )
+  ) %>%
+    modify_header(estimate ~ '**Diferença**')
 
 tab_inf <- tbl_stack(list(t_24, t_48))
 
