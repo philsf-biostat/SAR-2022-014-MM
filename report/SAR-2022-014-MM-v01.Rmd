@@ -88,6 +88,15 @@ Esta análise foi realizada utilizando-se o software `R` versão `r getRversion(
 
 ## População do estudo e acompanhamento
 
+Ao todo foram incluídos `r Nobs_final` participantes no estudo dos quais
+`r inline_text(tab_desc, variable = sexo, level = "H")`
+eram homens.
+Os participantes tinham idade média (DP)
+`r inline_text(tab_desc, variable = idade)` anos,
+com distribuição entre
+`r min(epi$idade)` e `r max(epi$idade)` anos.
+A tabela 1 exibe as características clínicas e epidemiológicas dos participantes.
+
 ```{r tab_desc}
 tab_desc %>%
     as_kable(
