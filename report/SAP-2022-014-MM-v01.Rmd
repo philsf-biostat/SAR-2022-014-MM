@@ -108,20 +108,28 @@ analytical_mockup %>%
 
 ## Critérios de inclusão e exclusão
 
+N/A
+
 ## Exposições
+
+N/A
 
 ## Desfechos
 
 **Especificação das medidas de desfecho** (Zarin, 2011):
 
-1. (Domínio)
-2. (Mensuração específica)
-3. (Métrica específica)
-4. (Método de agregação)
+1. (Domínio) Hemorragia / Anemia
+2. (Mensuração específica) Perda de componentes hematológicos e de sangue
+3. (Métrica específica) Mudança em relação à linha de base
+4. (Método de agregação) Média
 
 **Desfecho primário**
 
+Perda de componentes hematológicos e de sangue em 24 e 48 horas após a cirurgua, e mudança do HHS após seis semanas em relação ao momento pré-operatório.
+
 ## Covariáveis
+
+N/A
 
 # Métodos estatísticos
 
