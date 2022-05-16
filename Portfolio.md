@@ -1,43 +1,27 @@
 ---
-title: '[title]'
-date: ""
-permalink: /portfolio/SAR-yyyy-NNN/
+title: 'Prognóstico de componentes hematológicos após ATQ bilateral simultânea em centro cirúrgico de referência'
+date: "2022-05-16"
+permalink: /portfolio/SAR-2022-014/
 redirect_from:
-  - /portfolio/SAR-yyyy-NNN-XX/
-  - /SAR-yyyy-NNN-XX/
+  - /portfolio/SAR-2022-014-MM/
+  - /SAR-2022-014-MM/
 categories:
-  - case-control
-  - cross-sectional
   - longitudinal-studies
   - cohort
-  - clinical-trial
-  - ecological
   - epidemiology
-  - bioassay
 tags:
-  - prevalence
-  - incidence
-  - diagnostic-models
   - prognostic-models
-  - survival-analysis
-  - efficacy
-  - concordance-analysis
-  - survey
-  - machine-learning
-  - unsupervised-learning
 ---
 
-Objetivo
+Avaliar a perda sanguíea e a redução dos níveis de hemoglobina em pacientes submetidos à artroplastia total do quadril bilateral simultânea, assim como as necessidades transfusionais nesses pacientes.
 
-Análise Estatística para PESSOA (LOCAL, aaaa)
+Análise Estatística para Marcelo Monteiro (INTO, 2022)
 
 ## Análises realizadas
 
 1. Análise descritiva
 1. Análise inferencial
-1. Análise de poder
-1. Imputação de dados faltantes
-1. Modelagem estatística
+<!-- 1. Modelagem estatística -->
 
 ## Documentos
 
@@ -59,5 +43,5 @@ Análise Estatística para PESSOA (LOCAL, aaaa)
 
 <!-- --- -->
 
-[sap]: /files/SAP-yyyy-NNN-XX-v01.pdf
-[sar]: /files/SAR-yyyy-NNN-XX-v01.pdf
+[sap]: /files/SAP-2022-014-MM-v01.pdf
+[sar]: /files/SAR-2022-014-MM-v01.pdf
