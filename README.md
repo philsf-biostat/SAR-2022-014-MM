@@ -1,6 +1,6 @@
 # Prognóstico de componentes hematológicos após ATQ bilateral simultânea em centro cirúrgico de referência
 
-Objetivo
+Avaliar a perda sanguíea e a redução dos níveis de hemoglobina em pacientes submetidos à artroplastia total do quadril bilateral simultânea, assim como as necessidades transfusionais nesses pacientes.
 
 Análise Estatística para Marcelo Monteiro (INTO, 2022)
 
