@@ -13,10 +13,10 @@ gg <- analytical %>%
 
 # plots -------------------------------------------------------------------
 
-gg.outcome <- gg +
-  geom_density(aes(outcome, fill = group), alpha = .8) +
-  xlab(attr(analytical$outcome, "label")) +
-  ylab("")
+# gg.outcome <- gg +
+#   geom_density(aes(outcome, fill = group), alpha = .8) +
+#   xlab(attr(analytical$outcome, "label")) +
+#   ylab("")
 
 # cool facet trick from https://stackoverflow.com/questions/3695497 by JWilliman
 # gg +
