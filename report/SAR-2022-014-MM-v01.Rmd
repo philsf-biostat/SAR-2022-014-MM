@@ -115,10 +115,17 @@ knitr::include_graphics("../figures/perda.png", error = FALSE)
 
 ## Prognóstico de componentes hematológicos
 
-```{r fig2, fig.cap="**Figura 2** Prognóstico das alterações nos componentes hematológicos e Harris Hip Score (HHS) dos participantes do estudo."}
+Os participantes do estudo tiveram redução dos parâmetros hematológicos ao longo do período de observação e aumento no escore funcional durante o período de observação (Figura 2, Tabela 2).
+A hemoglobina teve redução de 3 no primeiro dia (p<0.001) e de 4.3 no segundo dia (p<0.001).
+Os hematócritos apresentaram redução de 9.4 no primeiro dia (p<0.001) e de 13 no segundo dia (p<0.001).
+
+```{r fig2, fig.cap="**Figura 2** Prognóstico das alterações na hemoglobina (HB), hematócritos (HT) e Harris Hip Score (HHS) dos participantes do estudo."}
 # ![Age](../figures/outcome.png)
 knitr::include_graphics("../figures/outcome.png", error = FALSE)
 ```
+
+A dor, mensurada pela EVA teve redução de 4.6 pontos (p<0.001) e no segundo dia redução de 6.4 pontos (p<0.001).
+Seis semanas após a cirurgia o HHS aumentou em média 53 pontos (p<0.001).
 
 ```{r tab_inf}
 tab_inf %>%
@@ -128,6 +135,8 @@ tab_inf %>%
 ```
 
 # Observações e limitações
+
+N/A
 
 # Conclusões
 
