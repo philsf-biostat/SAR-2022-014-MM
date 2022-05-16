@@ -26,6 +26,9 @@ data.raw <- data.raw %>%
     id = prontuario,
     volemia = volemia_pre,
     perda_hb_24 = perda_hb_estimada_24,
+    vol_tr = volume_transfundido,
+    vol_24 = volume_infundido_24,
+    vol_48 = volume_infundido_48,
   ) %>%
   mutate(
     idade = floor((nasc %--% data_cir)/dyears(1)),
@@ -34,8 +37,8 @@ data.raw <- data.raw %>%
       sexo == "M" ~ altura^3 * .356 * peso * .33 + .183,
       sexo == "H" ~ altura^3 * .367 * peso * .32 + .604,
     ),
-    perda_hb_24 = volemia * (hb_pre - hb_24) + volume_infundido_24,
-    perda_hb_48 = volemia * (hb_pre - hb_48) + volume_infundido_48,
+    perda_hb_24 = volemia * (hb_pre - hb_24) + vol_24,
+    perda_hb_48 = volemia * (hb_pre - hb_48) + vol_48,
     perda_sang_24 = volemia * perda_hb_24 / hb_pre,
     perda_sang_48 = volemia * perda_hb_48 / hb_pre,
   ) %>%
@@ -69,7 +72,7 @@ epi <- data.raw %>%
     contains("pre"),
     lado_1,
     cha_cir,
-    volume_transfundido,
+    vol_tr,
   )
 
 analytical <- data.raw %>%
@@ -98,7 +101,7 @@ analytical <- data.raw %>%
     # -hhs_pre,
     -lado_1,
     # -cha_cir,
-    -volume_transfundido,
+    -vol_tr,
   )
 
 Nvar_final <- analytical %>% ncol
