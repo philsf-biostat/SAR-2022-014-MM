@@ -36,6 +36,8 @@ data.raw <- data.raw %>%
     ),
     perda_hb_24 = volemia * (hb_pre - hb_24) + volume_infundido_24,
     perda_hb_48 = volemia * (hb_pre - hb_48) + volume_infundido_48,
+    perda_sang_24 = volemia * perda_hb_24 / hb_pre,
+    perda_sang_48 = volemia * perda_hb_48 / hb_pre,
   ) %>%
   filter()
 
