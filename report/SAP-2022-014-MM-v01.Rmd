@@ -73,6 +73,8 @@ Avaliar a perda sanguínea, de componentes hematológicos e diferença em result
 
 ## Hipóteses
 
+N/A
+
 ## Desenho do estudo
 
 Estudo longitudinal do tipo coorte prospectiva, de braço único.
@@ -188,6 +190,8 @@ N/A
 Esta análise será realizada utilizando-se o software `R` versão `r getRversion()`.
 
 # Observações e limitações
+
+N/A
 
 # Referências
 
