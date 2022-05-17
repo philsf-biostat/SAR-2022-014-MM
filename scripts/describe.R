@@ -31,6 +31,9 @@ tab_desc <- epi %>%
   tbl_summary(
     include = -id,
     # by = group,
+    type = list(
+      eva_pre ~ "continuous"
+    ),
   ) %>%
   # modify_caption(caption = "**Tabela 1** Características demográficas") %>%
   # modify_header(label ~ "**Características dos pacientes**") %>%

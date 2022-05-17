@@ -179,6 +179,14 @@ A perda de sangue média um dia após a cirurgia foi de 5.702, reduzida para 5.0
 knitr::include_graphics("../figures/perda.png", error = FALSE)
 ```
 
+Um participante (homem, 58 anos)
+<!-- e IMC 26.7 -->
+fez uso de CHA no intra-operatório.
+Um dia após a cirurgia outro participante (homem, 34 anos)
+<!-- IMC 31.6 -->
+necessitou de CHA.
+Nenhum participante necessitou de CHA 48 horas após a cirurgia.
+
 ## Prognóstico de componentes hematológicos
 
 Os participantes do estudo tiveram redução dos parâmetros hematológicos ao longo do período de observação e aumento no escore funcional durante o período de observação (Figura 2, Tabela 2).

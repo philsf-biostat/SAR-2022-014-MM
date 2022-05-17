@@ -86,6 +86,9 @@ data.raw <- data.raw %>%
     vol_tr = "Volume transfundido",
     vol_24 = "Volume infundido 24h",
     vol_48 = "Volume infundido 48h",
+    tempo_1 = "Tempo primeiro lado (minutos)",
+    tempo_2 = "Tempo segundo lado (minutos)",
+    tempo_tot = "Tempo total (minutos)",
     tempo_alta = "Tempo até alta (dias)",
   )
 
@@ -101,6 +104,9 @@ epi <- data.raw %>%
     volemia,
     contains("pre"),
     lado_1,
+    tempo_1,
+    tempo_2,
+    tempo_tot,
     cha_pre,
     vol_tr,
     tempo_alta,
