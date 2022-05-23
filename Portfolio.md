@@ -5,6 +5,7 @@ permalink: /portfolio/SAR-2022-014/
 redirect_from:
   - /portfolio/SAR-2022-014-MM/
   - /SAR-2022-014-MM/
+  - /SAR-2022-014/
 categories:
   - longitudinal-studies
   - cohort
