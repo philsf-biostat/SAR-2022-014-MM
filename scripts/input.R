@@ -38,8 +38,8 @@ data.raw <- data.raw %>%
     idade = floor((nasc %--% data_cir)/dyears(1)),
     imc = peso/(altura^2),
     volemia = case_when(
-      sexo == "M" ~ altura^3 * .356 * peso * .33 + .183,
-      sexo == "H" ~ altura^3 * .367 * peso * .32 + .604,
+      sexo == "M" ~ altura^3 * .356 * peso * .033 + .183,
+      sexo == "H" ~ altura^3 * .367 * peso * .032 + .604,
     ),
     perdahb_24 = volemia * (hb_pre - hb_24) / 100 + vol_24,
     perdahb_48 = volemia * (hb_pre - hb_48) / 100 + vol_48,

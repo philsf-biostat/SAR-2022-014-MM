@@ -24,7 +24,7 @@ gg.outcome <- gg +
 gg_perda <- analytical_long %>%
   filter(str_detect(name, "PERDA")) %>%
   ggplot() +
-  geom_line(aes(time, value, group = id), col = ff.col) +
+  geom_line(aes(time, value, group = id), col = ff.col, alpha = .7) +
   facet_wrap(~ name, scales = "free") +
   labs(caption = paste("N =", Nobs_final)) +
   xlab(attr(analytical_long$time, "label")) +

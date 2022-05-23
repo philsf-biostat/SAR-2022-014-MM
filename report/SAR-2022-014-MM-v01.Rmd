@@ -85,8 +85,8 @@ O IMC foi calculado a partir a partir da altura e peso como $IMC = peso/{altura^
 
 A volemia foi calculada seguindo as fórmulas:
 
-- $\text{volemia}_{homens} = \text{altura}^3 \times 0.367 \times \text{peso} \times 0.32 + 0.604$
-- $\text{volemia}_{mulheres} = \text{altura}^3 \times 0.356 \times \text{peso} \times 0.33 + 0.183$
+- $\text{volemia}_{homens} = \text{altura}^3 \times 0.367 \times \text{peso} \times 0.032 + 0.604$
+- $\text{volemia}_{mulheres} = \text{altura}^3 \times 0.356 \times \text{peso} \times 0.033 + 0.183$
 
 A perda de sangue e a perda de hemoglobina estimadas foram calculadas seguindo as fórmulas:
 
@@ -171,8 +171,15 @@ tab_desc %>%
 ```
 
 Entre 24h e 48h após a cirurgia boa parte dos participantes apresentou redução tanto na perda de hemoglobina como na perda de sangue (Tabela 1, Figura 1).
-Após 24h os participantes apresentaram perda de hemoglobina em torno de 1,502 em média, e após 48h esta perda se reduziu para 1,241.
-A perda de sangue média um dia após a cirurgia foi de 5,163, reduzida para 4,278 no segundo dia.
+Após 24h os participantes apresentaram perda de hemoglobina em torno de
+`r mean(analytical$perdahb_24) %>% style_number(big.mark = ".", decimal.mark = ",")`
+em média, e após 48h esta perda se reduziu para
+`r mean(analytical$perdahb_48) %>% style_number(big.mark = ".", decimal.mark = ",")`.
+A perda de sangue média um dia após a cirurgia foi de
+`r mean(analytical$perdasang_24) %>% style_number(big.mark = ".", decimal.mark = ",")`,
+reduzida para
+`r mean(analytical$perdasang_48) %>% style_number(big.mark = ".", decimal.mark = ",")`
+no segundo dia.
 
 ```{r fig1, fig.cap="**Figura 1** Prognóstico de perda de hemoglobina (HB) e perda de sangue dos participantes nos períodos de observação."}
 # ![Age](../figures/outcome.png)
