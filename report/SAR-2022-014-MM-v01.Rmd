@@ -171,8 +171,15 @@ tab_desc %>%
 ```
 
 Entre 24h e 48h após a cirurgia boa parte dos participantes apresentou redução tanto na perda de hemoglobina como na perda de sangue (Tabela 1, Figura 1).
-Após 24h os participantes apresentaram perda de hemoglobina em torno de 1,502 em média, e após 48h esta perda se reduziu para 1,241.
-A perda de sangue média um dia após a cirurgia foi de 5,163, reduzida para 4,278 no segundo dia.
+Após 24h os participantes apresentaram perda de hemoglobina em torno de
+`r mean(analytical$perdahb_24) %>% style_number(big.mark = ".", decimal.mark = ",")`
+em média, e após 48h esta perda se reduziu para
+`r mean(analytical$perdahb_48) %>% style_number(big.mark = ".", decimal.mark = ",")`.
+A perda de sangue média um dia após a cirurgia foi de
+`r mean(analytical$perdasang_24) %>% style_number(big.mark = ".", decimal.mark = ",")`,
+reduzida para
+`r mean(analytical$perdasang_48) %>% style_number(big.mark = ".", decimal.mark = ",")`
+no segundo dia.
 
 ```{r fig1, fig.cap="**Figura 1** Prognóstico de perda de hemoglobina (HB) e perda de sangue dos participantes nos períodos de observação."}
 # ![Age](../figures/outcome.png)
